@@ -41,4 +41,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Tanishsnghhh/leetcode-solutions/tree/master/0005-longest-palindromic-substring) |
 | [0647-palindromic-substrings](https://github.com/Tanishsnghhh/leetcode-solutions/tree/master/0647-palindromic-substrings) |
+| [1013-fibonacci-number](https://github.com/Tanishsnghhh/leetcode-solutions/tree/master/1013-fibonacci-number) |
+## Math
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/Tanishsnghhh/leetcode-solutions/tree/master/1013-fibonacci-number) |
+## Recursion
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/Tanishsnghhh/leetcode-solutions/tree/master/1013-fibonacci-number) |
+## Memoization
+|  |
+| ------- |
+| [1013-fibonacci-number](https://github.com/Tanishsnghhh/leetcode-solutions/tree/master/1013-fibonacci-number) |
 <!---LeetCode Topics End-->
