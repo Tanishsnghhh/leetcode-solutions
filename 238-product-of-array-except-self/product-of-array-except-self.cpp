@@ -1,46 +1,32 @@
 class Solution {
 public:
     vector<int> productExceptSelf(vector<int>& nums) {
-       int n = nums.size() ;
 
-       int count_zero = 0;
-       int product_without_zero = 1;
+        int n = nums.size();
 
-       for (int &num : nums)
-       {
-        if (num==0)
+        vector<int> left(n);
+        vector<int> right(n);
+
+        left[0] = 1;
+        right[n - 1] = 1;
+
+        for (int i = 1; i < n; i++)
         {
-            count_zero++;
+            left[i] = nums[i - 1] * left[i - 1];
         }
-        else {
-            product_without_zero *= num;
 
-        }
-       }
-
-       vector<int> result (n);
-    for (int i = 0; i < n; i++)
+        for (int i = n - 2; i >= 0; i--)
         {
-            int num = nums[i];
-            if (num == 0)
-            {
-                if (count_zero == 1)
-                {
-                    result[i] = product_without_zero;
-                }
-            }
-            else
-            {
-                if (count_zero > 0)
-                {
-                    result[i] = 0;
-                }
-                else
-                {
-                    result[i] = product_without_zero / nums[i];
-                }
+            right[i] = nums[i + 1] * right[i + 1];
         }
-       }
-    return result;
+
+        vector<int> result(n);
+
+        for (int i = 0; i < n; i++)
+        {
+            result[i] = left[i] * right[i];
+        }
+
+        return result;
     }
 };
